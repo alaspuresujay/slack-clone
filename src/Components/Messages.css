@@ -1,0 +1,27 @@
+.message {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+}
+
+.message:hover {
+	background-color: rgb(245, 242, 242);
+}
+
+.message > img {
+	height: 50px;
+	width: 50px;
+	object-fit: contain;
+}
+.message-timestamp {
+	color: gray;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.message-info {
+	padding-left: 10px;
+}

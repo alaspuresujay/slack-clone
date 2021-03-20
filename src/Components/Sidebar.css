@@ -1,0 +1,62 @@
+.sidebar {
+	color: whitesmoke;
+	background-color: var(--slack-color);
+	border-top: 1px solid #49274b;
+	max-width: 260px;
+}
+
+hr {
+	border: 0.5px solid #49274b;
+	margin: 5px 0;
+}
+.sidebar-header {
+	display: flex;
+	border-bottom: 1px solid #49274b;
+	padding-bottom: 10px;
+	padding: 13px;
+}
+
+.sidebar-header > .MuiSvgIcon-root {
+	padding: 8px;
+	color: #49274b;
+	font-size: 18px;
+	background-color: white;
+	border-radius: 999px;
+}
+.sidebar-info {
+	flex: 1;
+}
+.sidebar-info > h2 {
+	font-size: 15px;
+	font-weight: 900;
+	margin-bottom: 5px;
+}
+.sidebar-info > h3 {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	font-weight: 400;
+}
+.sidebar-info > h3 > .MuiSvgIcon-root {
+	font-size: 14px;
+	margin-top: 1px;
+	margin-right: 2px;
+	color: green;
+}
+.channels {
+	padding-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.channels:hover {
+	background-color: #340e36;
+}
+.channels > .add-channel {
+	padding: 5px;
+	cursor: pointer;
+}
+.channels > .add-channel:hover {
+	background-color: #49274b;
+	border-radius: 50%;
+}
