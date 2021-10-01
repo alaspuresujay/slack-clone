@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { db } from '../firebase';
 import './SidebarOption.css';
-function SIdebarOption({ Icon = null, title, id, addChanneloption }) {
+function SIdebarOption({ Icon = null, title, id = null, addChanneloption = null }) {
 	const history = useHistory();
 	const selectChannel = () => {
 		if (id) {
@@ -21,9 +21,7 @@ function SIdebarOption({ Icon = null, title, id, addChanneloption }) {
 		}
 	};
 	return (
-		<div
-			className='sidebarOption'
-			onClick={addChanneloption ? addChannel : selectChannel}>
+		<div className='sidebarOption' onClick={addChanneloption ? addChannel : selectChannel}>
 			{Icon && <Icon className='sidebarOption-icon' />}
 			{Icon ? (
 				<h3>{title}</h3>
