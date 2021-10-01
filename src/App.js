@@ -8,7 +8,7 @@ import Login from './Components/Pages/Login';
 import { useStateValue } from './Context/StateProvider';
 
 function App() {
-	const [{ user }] = useStateValue();
+	const [{ user }, dispatch] = useStateValue();
 	return (
 		<div>
 			<Router>

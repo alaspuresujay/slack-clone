@@ -5,7 +5,7 @@ import { auth, googleAuthProvider } from '../../firebase';
 import { useStateValue } from '../../Context/StateProvider';
 import { actionTypes } from '../../Context/Reducer';
 function Login() {
-	const [dispatch] = useStateValue();
+	const [state, dispatch] = useStateValue();
 	const signIn = () => {
 		auth
 			.signInWithPopup(googleAuthProvider)
